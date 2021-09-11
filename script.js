@@ -154,15 +154,15 @@ function addEventListeners(){
     const imgList = document.querySelectorAll('.grid li');
     
     draggables.forEach((draggable)=>{
-    draggable.addEventListener('touchstart',dragStart)
+    draggable.addEventListener('dragstart',dragStart)
         console.log(draggable)
     })
     
     imgList.forEach(img=>{
-    img.addEventListener('touchstart',dragOver)
-    img.addEventListener('touchend',dragDrop)
-    img.addEventListener('touchenter',dragEnter)
-    img.addEventListener('touchleave',dragLeave)
+    img.addEventListener('dragover',dragOver)
+    img.addEventListener('drop',dragDrop)
+    img.addEventListener('dragenter',dragEnter)
+    img.addEventListener('dragleave',dragLeave)
 
         
     })
